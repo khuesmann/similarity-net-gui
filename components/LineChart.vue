@@ -129,7 +129,7 @@ export default Vue.extend({
           .transition()
           .duration(1000)
           .attr("d", d3.line()
-            .x(function(d) { return x(d.date) })
+            .x(function(d) { return x(d.timestep) })
             .y(function(d) { return y(parseFloat(d.value)) })
           )
       }
