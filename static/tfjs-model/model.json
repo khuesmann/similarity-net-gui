@@ -1,1 +1,1526 @@
-{"format": "graph-model", "generatedBy": "2.8.0", "convertedBy": "TensorFlow.js Converter v3.19.0", "signature": {"inputs": {"input_1": {"name": "input_1:0", "dtype": "DT_FLOAT", "tensorShape": {"dim": [{"size": "-1"}, {"size": "256"}, {"size": "16384"}]}}}, "outputs": {"output_1": {"name": "Identity:0", "dtype": "DT_FLOAT", "tensorShape": {"dim": [{"size": "-1"}, {"size": "256"}, {"size": "2"}]}}}}, "modelTopology": {"node": [{"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const", "op": "Const", "attr": {"dtype": {"type": "DT_INT32"}, "value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {"dim": [{"size": "1"}]}}}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/axes", "op": "Const", "attr": {"value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {"dim": [{"size": "1"}]}}}, "dtype": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2_1/axis", "op": "Const", "attr": {"value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {}}}, "dtype": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const_1", "op": "Const", "attr": {"value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {"dim": [{"size": "1"}]}}}, "dtype": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/ReadVariableOp", "op": "Const", "attr": {"dtype": {"type": "DT_FLOAT"}, "value": {"tensor": {"dtype": "DT_FLOAT", "tensorShape": {"dim": [{"size": "8"}, {"size": "2"}]}}}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const", "op": "Const", "attr": {"dtype": {"type": "DT_INT32"}, "value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {"dim": [{"size": "1"}]}}}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/axes", "op": "Const", "attr": {"value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {"dim": [{"size": "1"}]}}}, "dtype": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2_1/axis", "op": "Const", "attr": {"dtype": {"type": "DT_INT32"}, "value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {}}}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const_1", "op": "Const", "attr": {"value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {"dim": [{"size": "1"}]}}}, "dtype": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/ReadVariableOp", "op": "Const", "attr": {"dtype": {"type": "DT_FLOAT"}, "value": {"tensor": {"dtype": "DT_FLOAT", "tensorShape": {"dim": [{"size": "16"}, {"size": "8"}]}}}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/Const", "op": "Const", "attr": {"dtype": {"type": "DT_INT32"}, "value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {"dim": [{"size": "1"}]}}}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/axes", "op": "Const", "attr": {"dtype": {"type": "DT_INT32"}, "value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {"dim": [{"size": "1"}]}}}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2_1/axis", "op": "Const", "attr": {"dtype": {"type": "DT_INT32"}, "value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {}}}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/Const_1", "op": "Const", "attr": {"dtype": {"type": "DT_INT32"}, "value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {"dim": [{"size": "1"}]}}}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/ReadVariableOp", "op": "Const", "attr": {"dtype": {"type": "DT_FLOAT"}, "value": {"tensor": {"dtype": "DT_FLOAT", "tensorShape": {"dim": [{"size": "16384"}, {"size": "16"}]}}}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/free", "op": "Const", "attr": {"dtype": {"type": "DT_INT32"}, "value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {"dim": [{"size": "2"}]}}}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2/axis", "op": "Const", "attr": {"value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {}}}, "dtype": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/Const_2", "op": "Const", "attr": {"dtype": {"type": "DT_INT32"}, "value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {"dim": [{"size": "1"}]}}}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/concat_1/axis", "op": "Const", "attr": {"dtype": {"type": "DT_INT32"}, "value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {}}}}}, {"name": "StatefulPartitionedCall/encoder/dense/BiasAdd/ReadVariableOp", "op": "Const", "attr": {"dtype": {"type": "DT_FLOAT"}, "value": {"tensor": {"dtype": "DT_FLOAT", "tensorShape": {"dim": [{"size": "16"}]}}}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/free", "op": "Const", "attr": {"value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {"dim": [{"size": "2"}]}}}, "dtype": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2/axis", "op": "Const", "attr": {"value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {}}}, "dtype": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const_2", "op": "Const", "attr": {"value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {"dim": [{"size": "1"}]}}}, "dtype": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/concat_1/axis", "op": "Const", "attr": {"value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {}}}, "dtype": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/BiasAdd/ReadVariableOp", "op": "Const", "attr": {"dtype": {"type": "DT_FLOAT"}, "value": {"tensor": {"dtype": "DT_FLOAT", "tensorShape": {"dim": [{"size": "8"}]}}}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/free", "op": "Const", "attr": {"value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {"dim": [{"size": "2"}]}}}, "dtype": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2/axis", "op": "Const", "attr": {"dtype": {"type": "DT_INT32"}, "value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {}}}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const_2", "op": "Const", "attr": {"value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {"dim": [{"size": "1"}]}}}, "dtype": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/concat_1/axis", "op": "Const", "attr": {"value": {"tensor": {"dtype": "DT_INT32", "tensorShape": {}}}, "dtype": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/BiasAdd/ReadVariableOp", "op": "Const", "attr": {"value": {"tensor": {"dtype": "DT_FLOAT", "tensorShape": {"dim": [{"size": "2"}]}}}, "dtype": {"type": "DT_FLOAT"}}}, {"name": "input_1", "op": "Placeholder", "attr": {"shape": {"shape": {"dim": [{"size": "-1"}, {"size": "256"}, {"size": "16384"}]}}, "dtype": {"type": "DT_FLOAT"}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/Shape", "op": "Shape", "input": ["input_1"], "attr": {"T": {"type": "DT_FLOAT"}, "out_type": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2_1", "op": "GatherV2", "input": ["StatefulPartitionedCall/encoder/dense/Tensordot/Shape", "StatefulPartitionedCall/encoder/dense/Tensordot/axes", "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2_1/axis"], "attr": {"Tparams": {"type": "DT_INT32"}, "Taxis": {"type": "DT_INT32"}, "batch_dims": {"i": "0"}, "Tindices": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2", "op": "GatherV2", "input": ["StatefulPartitionedCall/encoder/dense/Tensordot/Shape", "StatefulPartitionedCall/encoder/dense/Tensordot/free", "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2/axis"], "attr": {"Tindices": {"type": "DT_INT32"}, "Taxis": {"type": "DT_INT32"}, "batch_dims": {"i": "0"}, "Tparams": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/Prod_1", "op": "Prod", "input": ["StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2_1", "StatefulPartitionedCall/encoder/dense/Tensordot/Const_1"], "attr": {"keep_dims": {"b": false}, "T": {"type": "DT_INT32"}, "Tidx": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/Prod", "op": "Prod", "input": ["StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2", "StatefulPartitionedCall/encoder/dense/Tensordot/Const"], "attr": {"keep_dims": {"b": false}, "T": {"type": "DT_INT32"}, "Tidx": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/concat_1", "op": "ConcatV2", "input": ["StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2", "StatefulPartitionedCall/encoder/dense/Tensordot/Const_2", "StatefulPartitionedCall/encoder/dense/Tensordot/concat_1/axis"], "attr": {"N": {"i": "2"}, "T": {"type": "DT_INT32"}, "Tidx": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/stack", "op": "Pack", "input": ["StatefulPartitionedCall/encoder/dense/Tensordot/Prod", "StatefulPartitionedCall/encoder/dense/Tensordot/Prod_1"], "attr": {"N": {"i": "2"}, "T": {"type": "DT_INT32"}, "axis": {"i": "0"}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/Reshape", "op": "Reshape", "input": ["input_1", "StatefulPartitionedCall/encoder/dense/Tensordot/stack"], "attr": {"Tshape": {"type": "DT_INT32"}, "T": {"type": "DT_FLOAT"}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/MatMul", "op": "MatMul", "input": ["StatefulPartitionedCall/encoder/dense/Tensordot/Reshape", "StatefulPartitionedCall/encoder/dense/Tensordot/ReadVariableOp"], "device": "/device:CPU:0", "attr": {"transpose_a": {"b": false}, "transpose_b": {"b": false}, "T": {"type": "DT_FLOAT"}}}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot", "op": "Reshape", "input": ["StatefulPartitionedCall/encoder/dense/Tensordot/MatMul", "StatefulPartitionedCall/encoder/dense/Tensordot/concat_1"], "attr": {"Tshape": {"type": "DT_INT32"}, "T": {"type": "DT_FLOAT"}}}, {"name": "StatefulPartitionedCall/encoder/dense/BiasAdd", "op": "BiasAdd", "input": ["StatefulPartitionedCall/encoder/dense/Tensordot", "StatefulPartitionedCall/encoder/dense/BiasAdd/ReadVariableOp"], "attr": {"T": {"type": "DT_FLOAT"}, "data_format": {"s": "TkhXQw=="}}}, {"name": "StatefulPartitionedCall/encoder/dense/LeakyRelu", "op": "LeakyRelu", "input": ["StatefulPartitionedCall/encoder/dense/BiasAdd"], "attr": {"T": {"type": "DT_FLOAT"}, "alpha": {"f": 0.2}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Shape", "op": "Shape", "input": ["StatefulPartitionedCall/encoder/dense/LeakyRelu"], "attr": {"out_type": {"type": "DT_INT32"}, "T": {"type": "DT_FLOAT"}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2_1", "op": "GatherV2", "input": ["StatefulPartitionedCall/encoder/dense_1/Tensordot/Shape", "StatefulPartitionedCall/encoder/dense_1/Tensordot/axes", "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2_1/axis"], "attr": {"Tindices": {"type": "DT_INT32"}, "batch_dims": {"i": "0"}, "Tparams": {"type": "DT_INT32"}, "Taxis": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2", "op": "GatherV2", "input": ["StatefulPartitionedCall/encoder/dense_1/Tensordot/Shape", "StatefulPartitionedCall/encoder/dense_1/Tensordot/free", "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2/axis"], "attr": {"Tparams": {"type": "DT_INT32"}, "batch_dims": {"i": "0"}, "Tindices": {"type": "DT_INT32"}, "Taxis": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Prod_1", "op": "Prod", "input": ["StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2_1", "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const_1"], "attr": {"T": {"type": "DT_INT32"}, "keep_dims": {"b": false}, "Tidx": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Prod", "op": "Prod", "input": ["StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2", "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const"], "attr": {"Tidx": {"type": "DT_INT32"}, "keep_dims": {"b": false}, "T": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/concat_1", "op": "ConcatV2", "input": ["StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2", "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const_2", "StatefulPartitionedCall/encoder/dense_1/Tensordot/concat_1/axis"], "attr": {"N": {"i": "2"}, "Tidx": {"type": "DT_INT32"}, "T": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/stack", "op": "Pack", "input": ["StatefulPartitionedCall/encoder/dense_1/Tensordot/Prod", "StatefulPartitionedCall/encoder/dense_1/Tensordot/Prod_1"], "attr": {"T": {"type": "DT_INT32"}, "N": {"i": "2"}, "axis": {"i": "0"}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Reshape", "op": "Reshape", "input": ["StatefulPartitionedCall/encoder/dense/LeakyRelu", "StatefulPartitionedCall/encoder/dense_1/Tensordot/stack"], "attr": {"T": {"type": "DT_FLOAT"}, "Tshape": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/MatMul", "op": "MatMul", "input": ["StatefulPartitionedCall/encoder/dense_1/Tensordot/Reshape", "StatefulPartitionedCall/encoder/dense_1/Tensordot/ReadVariableOp"], "device": "/device:CPU:0", "attr": {"transpose_b": {"b": false}, "T": {"type": "DT_FLOAT"}, "transpose_a": {"b": false}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot", "op": "Reshape", "input": ["StatefulPartitionedCall/encoder/dense_1/Tensordot/MatMul", "StatefulPartitionedCall/encoder/dense_1/Tensordot/concat_1"], "attr": {"Tshape": {"type": "DT_INT32"}, "T": {"type": "DT_FLOAT"}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/BiasAdd", "op": "BiasAdd", "input": ["StatefulPartitionedCall/encoder/dense_1/Tensordot", "StatefulPartitionedCall/encoder/dense_1/BiasAdd/ReadVariableOp"], "attr": {"T": {"type": "DT_FLOAT"}, "data_format": {"s": "TkhXQw=="}}}, {"name": "StatefulPartitionedCall/encoder/dense_1/LeakyRelu", "op": "LeakyRelu", "input": ["StatefulPartitionedCall/encoder/dense_1/BiasAdd"], "attr": {"T": {"type": "DT_FLOAT"}, "alpha": {"f": 0.2}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Shape", "op": "Shape", "input": ["StatefulPartitionedCall/encoder/dense_1/LeakyRelu"], "attr": {"T": {"type": "DT_FLOAT"}, "out_type": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2_1", "op": "GatherV2", "input": ["StatefulPartitionedCall/encoder/dense_2/Tensordot/Shape", "StatefulPartitionedCall/encoder/dense_2/Tensordot/axes", "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2_1/axis"], "attr": {"Taxis": {"type": "DT_INT32"}, "batch_dims": {"i": "0"}, "Tparams": {"type": "DT_INT32"}, "Tindices": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2", "op": "GatherV2", "input": ["StatefulPartitionedCall/encoder/dense_2/Tensordot/Shape", "StatefulPartitionedCall/encoder/dense_2/Tensordot/free", "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2/axis"], "attr": {"Tparams": {"type": "DT_INT32"}, "batch_dims": {"i": "0"}, "Tindices": {"type": "DT_INT32"}, "Taxis": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Prod_1", "op": "Prod", "input": ["StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2_1", "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const_1"], "attr": {"Tidx": {"type": "DT_INT32"}, "T": {"type": "DT_INT32"}, "keep_dims": {"b": false}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Prod", "op": "Prod", "input": ["StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2", "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const"], "attr": {"keep_dims": {"b": false}, "T": {"type": "DT_INT32"}, "Tidx": {"type": "DT_INT32"}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/concat_1", "op": "ConcatV2", "input": ["StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2", "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const_2", "StatefulPartitionedCall/encoder/dense_2/Tensordot/concat_1/axis"], "attr": {"T": {"type": "DT_INT32"}, "Tidx": {"type": "DT_INT32"}, "N": {"i": "2"}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/stack", "op": "Pack", "input": ["StatefulPartitionedCall/encoder/dense_2/Tensordot/Prod", "StatefulPartitionedCall/encoder/dense_2/Tensordot/Prod_1"], "attr": {"T": {"type": "DT_INT32"}, "axis": {"i": "0"}, "N": {"i": "2"}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Reshape", "op": "Reshape", "input": ["StatefulPartitionedCall/encoder/dense_1/LeakyRelu", "StatefulPartitionedCall/encoder/dense_2/Tensordot/stack"], "attr": {"Tshape": {"type": "DT_INT32"}, "T": {"type": "DT_FLOAT"}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/MatMul", "op": "MatMul", "input": ["StatefulPartitionedCall/encoder/dense_2/Tensordot/Reshape", "StatefulPartitionedCall/encoder/dense_2/Tensordot/ReadVariableOp"], "device": "/device:CPU:0", "attr": {"transpose_a": {"b": false}, "transpose_b": {"b": false}, "T": {"type": "DT_FLOAT"}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot", "op": "Reshape", "input": ["StatefulPartitionedCall/encoder/dense_2/Tensordot/MatMul", "StatefulPartitionedCall/encoder/dense_2/Tensordot/concat_1"], "attr": {"Tshape": {"type": "DT_INT32"}, "T": {"type": "DT_FLOAT"}}}, {"name": "StatefulPartitionedCall/encoder/dense_2/BiasAdd", "op": "BiasAdd", "input": ["StatefulPartitionedCall/encoder/dense_2/Tensordot", "StatefulPartitionedCall/encoder/dense_2/BiasAdd/ReadVariableOp"], "attr": {"T": {"type": "DT_FLOAT"}, "data_format": {"s": "TkhXQw=="}}}, {"name": "Identity", "op": "Identity", "input": ["StatefulPartitionedCall/encoder/dense_2/BiasAdd"], "attr": {"T": {"type": "DT_FLOAT"}}}], "library": {}, "versions": {"producer": 987}}, "weightsManifest": [{"paths": ["group1-shard1of1.bin"], "weights": [{"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const", "shape": [1], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/axes", "shape": [1], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2_1/axis", "shape": [], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const_1", "shape": [1], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/ReadVariableOp", "shape": [8, 2], "dtype": "float32"}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const", "shape": [1], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/axes", "shape": [1], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2_1/axis", "shape": [], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const_1", "shape": [1], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/ReadVariableOp", "shape": [16, 8], "dtype": "float32"}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/Const", "shape": [1], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/axes", "shape": [1], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2_1/axis", "shape": [], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/Const_1", "shape": [1], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/ReadVariableOp", "shape": [16384, 16], "dtype": "float32"}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/free", "shape": [2], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2/axis", "shape": [], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/Const_2", "shape": [1], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense/Tensordot/concat_1/axis", "shape": [], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense/BiasAdd/ReadVariableOp", "shape": [16], "dtype": "float32"}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/free", "shape": [2], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2/axis", "shape": [], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const_2", "shape": [1], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/concat_1/axis", "shape": [], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_1/BiasAdd/ReadVariableOp", "shape": [8], "dtype": "float32"}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/free", "shape": [2], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2/axis", "shape": [], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const_2", "shape": [1], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/concat_1/axis", "shape": [], "dtype": "int32"}, {"name": "StatefulPartitionedCall/encoder/dense_2/BiasAdd/ReadVariableOp", "shape": [2], "dtype": "float32"}]}]}
+{
+  "format": "graph-model",
+  "generatedBy": "2.8.0",
+  "convertedBy": "TensorFlow.js Converter v3.19.0",
+  "signature": {
+    "inputs": {
+      "input_1": {
+        "name": "input_1:0",
+        "dtype": "DT_FLOAT",
+        "tensorShape": {
+          "dim": [
+            {
+              "size": "-1"
+            },
+            {
+              "size": "-1"
+            },
+            {
+              "size": "16384"
+            }
+          ]
+        }
+      }
+    },
+    "outputs": {
+      "output_1": {
+        "name": "Identity:0",
+        "dtype": "DT_FLOAT",
+        "tensorShape": {
+          "dim": [
+            {
+              "size": "-1"
+            },
+            {
+              "size": "-1"
+            },
+            {
+              "size": "2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "modelTopology": {
+    "node": [
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_INT32"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "1"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/axes",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "1"
+                  }
+                ]
+              }
+            }
+          },
+          "dtype": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2_1/axis",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {}
+            }
+          },
+          "dtype": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const_1",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "1"
+                  }
+                ]
+              }
+            }
+          },
+          "dtype": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_FLOAT"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "8"
+                  },
+                  {
+                    "size": "2"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_INT32"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "1"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/axes",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "1"
+                  }
+                ]
+              }
+            }
+          },
+          "dtype": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2_1/axis",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_INT32"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {}
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const_1",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "1"
+                  }
+                ]
+              }
+            }
+          },
+          "dtype": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_FLOAT"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "16"
+                  },
+                  {
+                    "size": "8"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/Const",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_INT32"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "1"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/axes",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_INT32"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "1"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2_1/axis",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_INT32"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {}
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/Const_1",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_INT32"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "1"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_FLOAT"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "16384"
+                  },
+                  {
+                    "size": "16"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/free",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_INT32"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "2"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2/axis",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {}
+            }
+          },
+          "dtype": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/Const_2",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_INT32"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "1"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/concat_1/axis",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_INT32"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {}
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/BiasAdd/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_FLOAT"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "16"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/free",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "2"
+                  }
+                ]
+              }
+            }
+          },
+          "dtype": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2/axis",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {}
+            }
+          },
+          "dtype": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const_2",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "1"
+                  }
+                ]
+              }
+            }
+          },
+          "dtype": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/concat_1/axis",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {}
+            }
+          },
+          "dtype": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/BiasAdd/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_FLOAT"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "8"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/free",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "2"
+                  }
+                ]
+              }
+            }
+          },
+          "dtype": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2/axis",
+        "op": "Const",
+        "attr": {
+          "dtype": {
+            "type": "DT_INT32"
+          },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {}
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const_2",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "1"
+                  }
+                ]
+              }
+            }
+          },
+          "dtype": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/concat_1/axis",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": {}
+            }
+          },
+          "dtype": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/BiasAdd/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": {
+                "dim": [
+                  {
+                    "size": "2"
+                  }
+                ]
+              }
+            }
+          },
+          "dtype": {
+            "type": "DT_FLOAT"
+          }
+        }
+      },
+      {
+        "name": "input_1",
+        "op": "Placeholder",
+        "attr": {
+          "shape": {
+            "shape": {
+              "dim": [
+                {
+                  "size": "-1"
+                },
+                {
+                  "size": "-1"
+                },
+                {
+                  "size": "16384"
+                }
+              ]
+            }
+          },
+          "dtype": {
+            "type": "DT_FLOAT"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/Shape",
+        "op": "Shape",
+        "input": [
+          "input_1"
+        ],
+        "attr": {
+          "T": {
+            "type": "DT_FLOAT"
+          },
+          "out_type": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2_1",
+        "op": "GatherV2",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense/Tensordot/Shape",
+          "StatefulPartitionedCall/encoder/dense/Tensordot/axes",
+          "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2_1/axis"
+        ],
+        "attr": {
+          "Tparams": {
+            "type": "DT_INT32"
+          },
+          "Taxis": {
+            "type": "DT_INT32"
+          },
+          "batch_dims": {
+            "i": "0"
+          },
+          "Tindices": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2",
+        "op": "GatherV2",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense/Tensordot/Shape",
+          "StatefulPartitionedCall/encoder/dense/Tensordot/free",
+          "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2/axis"
+        ],
+        "attr": {
+          "Tindices": {
+            "type": "DT_INT32"
+          },
+          "Taxis": {
+            "type": "DT_INT32"
+          },
+          "batch_dims": {
+            "i": "0"
+          },
+          "Tparams": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/Prod_1",
+        "op": "Prod",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2_1",
+          "StatefulPartitionedCall/encoder/dense/Tensordot/Const_1"
+        ],
+        "attr": {
+          "keep_dims": {
+            "b": false
+          },
+          "T": {
+            "type": "DT_INT32"
+          },
+          "Tidx": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/Prod",
+        "op": "Prod",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2",
+          "StatefulPartitionedCall/encoder/dense/Tensordot/Const"
+        ],
+        "attr": {
+          "keep_dims": {
+            "b": false
+          },
+          "T": {
+            "type": "DT_INT32"
+          },
+          "Tidx": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/concat_1",
+        "op": "ConcatV2",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2",
+          "StatefulPartitionedCall/encoder/dense/Tensordot/Const_2",
+          "StatefulPartitionedCall/encoder/dense/Tensordot/concat_1/axis"
+        ],
+        "attr": {
+          "N": {
+            "i": "2"
+          },
+          "T": {
+            "type": "DT_INT32"
+          },
+          "Tidx": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/stack",
+        "op": "Pack",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense/Tensordot/Prod",
+          "StatefulPartitionedCall/encoder/dense/Tensordot/Prod_1"
+        ],
+        "attr": {
+          "N": {
+            "i": "2"
+          },
+          "T": {
+            "type": "DT_INT32"
+          },
+          "axis": {
+            "i": "0"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/Reshape",
+        "op": "Reshape",
+        "input": [
+          "input_1",
+          "StatefulPartitionedCall/encoder/dense/Tensordot/stack"
+        ],
+        "attr": {
+          "Tshape": {
+            "type": "DT_INT32"
+          },
+          "T": {
+            "type": "DT_FLOAT"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot/MatMul",
+        "op": "MatMul",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense/Tensordot/Reshape",
+          "StatefulPartitionedCall/encoder/dense/Tensordot/ReadVariableOp"
+        ],
+        "device": "/device:CPU:0",
+        "attr": {
+          "transpose_a": {
+            "b": false
+          },
+          "transpose_b": {
+            "b": false
+          },
+          "T": {
+            "type": "DT_FLOAT"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/Tensordot",
+        "op": "Reshape",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense/Tensordot/MatMul",
+          "StatefulPartitionedCall/encoder/dense/Tensordot/concat_1"
+        ],
+        "attr": {
+          "Tshape": {
+            "type": "DT_INT32"
+          },
+          "T": {
+            "type": "DT_FLOAT"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/BiasAdd",
+        "op": "BiasAdd",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense/Tensordot",
+          "StatefulPartitionedCall/encoder/dense/BiasAdd/ReadVariableOp"
+        ],
+        "attr": {
+          "T": {
+            "type": "DT_FLOAT"
+          },
+          "data_format": {
+            "s": "TkhXQw=="
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense/LeakyRelu",
+        "op": "LeakyRelu",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense/BiasAdd"
+        ],
+        "attr": {
+          "T": {
+            "type": "DT_FLOAT"
+          },
+          "alpha": {
+            "f": 0.2
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Shape",
+        "op": "Shape",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense/LeakyRelu"
+        ],
+        "attr": {
+          "out_type": {
+            "type": "DT_INT32"
+          },
+          "T": {
+            "type": "DT_FLOAT"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2_1",
+        "op": "GatherV2",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/Shape",
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/axes",
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2_1/axis"
+        ],
+        "attr": {
+          "Tindices": {
+            "type": "DT_INT32"
+          },
+          "batch_dims": {
+            "i": "0"
+          },
+          "Tparams": {
+            "type": "DT_INT32"
+          },
+          "Taxis": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2",
+        "op": "GatherV2",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/Shape",
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/free",
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2/axis"
+        ],
+        "attr": {
+          "Tparams": {
+            "type": "DT_INT32"
+          },
+          "batch_dims": {
+            "i": "0"
+          },
+          "Tindices": {
+            "type": "DT_INT32"
+          },
+          "Taxis": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Prod_1",
+        "op": "Prod",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2_1",
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const_1"
+        ],
+        "attr": {
+          "T": {
+            "type": "DT_INT32"
+          },
+          "keep_dims": {
+            "b": false
+          },
+          "Tidx": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Prod",
+        "op": "Prod",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2",
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const"
+        ],
+        "attr": {
+          "Tidx": {
+            "type": "DT_INT32"
+          },
+          "keep_dims": {
+            "b": false
+          },
+          "T": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/concat_1",
+        "op": "ConcatV2",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2",
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const_2",
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/concat_1/axis"
+        ],
+        "attr": {
+          "N": {
+            "i": "2"
+          },
+          "Tidx": {
+            "type": "DT_INT32"
+          },
+          "T": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/stack",
+        "op": "Pack",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/Prod",
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/Prod_1"
+        ],
+        "attr": {
+          "T": {
+            "type": "DT_INT32"
+          },
+          "N": {
+            "i": "2"
+          },
+          "axis": {
+            "i": "0"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Reshape",
+        "op": "Reshape",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense/LeakyRelu",
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/stack"
+        ],
+        "attr": {
+          "T": {
+            "type": "DT_FLOAT"
+          },
+          "Tshape": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/MatMul",
+        "op": "MatMul",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/Reshape",
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/ReadVariableOp"
+        ],
+        "device": "/device:CPU:0",
+        "attr": {
+          "transpose_b": {
+            "b": false
+          },
+          "T": {
+            "type": "DT_FLOAT"
+          },
+          "transpose_a": {
+            "b": false
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot",
+        "op": "Reshape",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/MatMul",
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot/concat_1"
+        ],
+        "attr": {
+          "Tshape": {
+            "type": "DT_INT32"
+          },
+          "T": {
+            "type": "DT_FLOAT"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/BiasAdd",
+        "op": "BiasAdd",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_1/Tensordot",
+          "StatefulPartitionedCall/encoder/dense_1/BiasAdd/ReadVariableOp"
+        ],
+        "attr": {
+          "T": {
+            "type": "DT_FLOAT"
+          },
+          "data_format": {
+            "s": "TkhXQw=="
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_1/LeakyRelu",
+        "op": "LeakyRelu",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_1/BiasAdd"
+        ],
+        "attr": {
+          "T": {
+            "type": "DT_FLOAT"
+          },
+          "alpha": {
+            "f": 0.2
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Shape",
+        "op": "Shape",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_1/LeakyRelu"
+        ],
+        "attr": {
+          "T": {
+            "type": "DT_FLOAT"
+          },
+          "out_type": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2_1",
+        "op": "GatherV2",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/Shape",
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/axes",
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2_1/axis"
+        ],
+        "attr": {
+          "Taxis": {
+            "type": "DT_INT32"
+          },
+          "batch_dims": {
+            "i": "0"
+          },
+          "Tparams": {
+            "type": "DT_INT32"
+          },
+          "Tindices": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2",
+        "op": "GatherV2",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/Shape",
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/free",
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2/axis"
+        ],
+        "attr": {
+          "Tparams": {
+            "type": "DT_INT32"
+          },
+          "batch_dims": {
+            "i": "0"
+          },
+          "Tindices": {
+            "type": "DT_INT32"
+          },
+          "Taxis": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Prod_1",
+        "op": "Prod",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2_1",
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const_1"
+        ],
+        "attr": {
+          "Tidx": {
+            "type": "DT_INT32"
+          },
+          "T": {
+            "type": "DT_INT32"
+          },
+          "keep_dims": {
+            "b": false
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Prod",
+        "op": "Prod",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2",
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const"
+        ],
+        "attr": {
+          "keep_dims": {
+            "b": false
+          },
+          "T": {
+            "type": "DT_INT32"
+          },
+          "Tidx": {
+            "type": "DT_INT32"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/concat_1",
+        "op": "ConcatV2",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2",
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const_2",
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/concat_1/axis"
+        ],
+        "attr": {
+          "T": {
+            "type": "DT_INT32"
+          },
+          "Tidx": {
+            "type": "DT_INT32"
+          },
+          "N": {
+            "i": "2"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/stack",
+        "op": "Pack",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/Prod",
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/Prod_1"
+        ],
+        "attr": {
+          "T": {
+            "type": "DT_INT32"
+          },
+          "axis": {
+            "i": "0"
+          },
+          "N": {
+            "i": "2"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Reshape",
+        "op": "Reshape",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_1/LeakyRelu",
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/stack"
+        ],
+        "attr": {
+          "Tshape": {
+            "type": "DT_INT32"
+          },
+          "T": {
+            "type": "DT_FLOAT"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/MatMul",
+        "op": "MatMul",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/Reshape",
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/ReadVariableOp"
+        ],
+        "device": "/device:CPU:0",
+        "attr": {
+          "transpose_a": {
+            "b": false
+          },
+          "transpose_b": {
+            "b": false
+          },
+          "T": {
+            "type": "DT_FLOAT"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot",
+        "op": "Reshape",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/MatMul",
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot/concat_1"
+        ],
+        "attr": {
+          "Tshape": {
+            "type": "DT_INT32"
+          },
+          "T": {
+            "type": "DT_FLOAT"
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/encoder/dense_2/BiasAdd",
+        "op": "BiasAdd",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_2/Tensordot",
+          "StatefulPartitionedCall/encoder/dense_2/BiasAdd/ReadVariableOp"
+        ],
+        "attr": {
+          "T": {
+            "type": "DT_FLOAT"
+          },
+          "data_format": {
+            "s": "TkhXQw=="
+          }
+        }
+      },
+      {
+        "name": "Identity",
+        "op": "Identity",
+        "input": [
+          "StatefulPartitionedCall/encoder/dense_2/BiasAdd"
+        ],
+        "attr": {
+          "T": {
+            "type": "DT_FLOAT"
+          }
+        }
+      }
+    ],
+    "library": {},
+    "versions": {
+      "producer": 987
+    }
+  },
+  "weightsManifest": [
+    {
+      "paths": [
+        "group1-shard1of1.bin"
+      ],
+      "weights": [
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const",
+          "shape": [
+            1
+          ],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/axes",
+          "shape": [
+            1
+          ],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2_1/axis",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const_1",
+          "shape": [
+            1
+          ],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/ReadVariableOp",
+          "shape": [
+            8,
+            2
+          ],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const",
+          "shape": [
+            1
+          ],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/axes",
+          "shape": [
+            1
+          ],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2_1/axis",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const_1",
+          "shape": [
+            1
+          ],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/ReadVariableOp",
+          "shape": [
+            16,
+            8
+          ],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense/Tensordot/Const",
+          "shape": [
+            1
+          ],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense/Tensordot/axes",
+          "shape": [
+            1
+          ],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2_1/axis",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense/Tensordot/Const_1",
+          "shape": [
+            1
+          ],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense/Tensordot/ReadVariableOp",
+          "shape": [
+            16384,
+            16
+          ],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense/Tensordot/free",
+          "shape": [
+            2
+          ],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense/Tensordot/GatherV2/axis",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense/Tensordot/Const_2",
+          "shape": [
+            1
+          ],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense/Tensordot/concat_1/axis",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense/BiasAdd/ReadVariableOp",
+          "shape": [
+            16
+          ],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/free",
+          "shape": [
+            2
+          ],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/GatherV2/axis",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/Const_2",
+          "shape": [
+            1
+          ],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_1/Tensordot/concat_1/axis",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_1/BiasAdd/ReadVariableOp",
+          "shape": [
+            8
+          ],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/free",
+          "shape": [
+            2
+          ],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/GatherV2/axis",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/Const_2",
+          "shape": [
+            1
+          ],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_2/Tensordot/concat_1/axis",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/encoder/dense_2/BiasAdd/ReadVariableOp",
+          "shape": [
+            2
+          ],
+          "dtype": "float32"
+        }
+      ]
+    }
+  ]
+}
